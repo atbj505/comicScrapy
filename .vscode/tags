@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BOT_NAME	../Comics/Comics/settings.py	/^BOT_NAME = 'Comics'$/;"	kind:variable	line:12
+BeautifulSoup	../Comics/Comics/spiders/comics.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:4
+Comics	../Comics/Comics/spiders/comics.py	/^class Comics(scrapy.Spider):$/;"	kind:class	line:7
+ComicsItem	../Comics/Comics/items.py	/^class ComicsItem(scrapy.Item):$/;"	kind:class	line:11
+ComicsPipeline	../Comics/Comics/pipelines.py	/^class ComicsPipeline(object):$/;"	kind:class	line:9
+ComicsSpiderMiddleware	../Comics/Comics/middlewares.py	/^class ComicsSpiderMiddleware(object):$/;"	kind:class	line:11
+NEWSPIDER_MODULE	../Comics/Comics/settings.py	/^NEWSPIDER_MODULE = 'Comics.spiders'$/;"	kind:variable	line:15
+ROBOTSTXT_OBEY	../Comics/Comics/settings.py	/^ROBOTSTXT_OBEY = True$/;"	kind:variable	line:22
+RequestException	../wswp_chapter1.py	/^from requests.exceptions import RequestException$/;"	kind:namespace	line:8
+SPIDER_MODULES	../Comics/Comics/settings.py	/^SPIDER_MODULES = ['Comics.spiders']$/;"	kind:variable	line:14
+Throttle	../wswp_chapter1.py	/^class Throttle(object):$/;"	kind:class	line:62
+__init__	../wswp_chapter1.py	/^    def __init__(self, delay):$/;"	kind:member	line:66
+__init__.py	../Comics/Comics/__init__.py	1;"	kind:file	line:1
+__init__.py	../Comics/Comics/spiders/__init__.py	1;"	kind:file	line:1
+builtwith	../wswp_chapter1.py	/^import builtwith$/;"	kind:namespace	line:4
+comics.py	../Comics/Comics/spiders/comics.py	1;"	kind:file	line:1
+datetime	../wswp_chapter1.py	/^import datetime$/;"	kind:namespace	line:11
+download	../wswp_chapter1.py	/^def download(url, user_agent='wswp', proxy=None, num_retries=2):$/;"	kind:function	line:14
+from_crawler	../Comics/Comics/middlewares.py	/^    def from_crawler(cls, crawler):$/;"	kind:member	line:17
+get_links	../wswp_chapter1.py	/^def get_links(html):$/;"	kind:function	line:51
+get_robot	../wswp_chapter1.py	/^def get_robot(url):$/;"	kind:function	line:56
+items.py	../Comics/Comics/items.py	1;"	kind:file	line:1
+link_crawler	../wswp_chapter1.py	/^def link_crawler(seed_url, link_regex, agent='wswp', max_depth=2):$/;"	kind:function	line:32
+link_regex	../wswp_chapter1.py	/^    link_regex = '\/(index|view)'$/;"	kind:variable	line:92
+middlewares.py	../Comics/Comics/middlewares.py	1;"	kind:file	line:1
+name	../Comics/Comics/spiders/comics.py	/^    name = "comics"$/;"	kind:variable	line:12
+parse	../Comics/Comics/spiders/comics.py	/^    def parse(self, response):$/;"	kind:member	line:19
+pipelines.py	../Comics/Comics/pipelines.py	1;"	kind:file	line:1
+process_item	../Comics/Comics/pipelines.py	/^    def process_item(self, item, spider):$/;"	kind:member	line:10
+process_spider_exception	../Comics/Comics/middlewares.py	/^    def process_spider_exception(response, exception, spider):$/;"	kind:member	line:38
+process_spider_input	../Comics/Comics/middlewares.py	/^    def process_spider_input(response, spider):$/;"	kind:member	line:23
+process_spider_output	../Comics/Comics/middlewares.py	/^    def process_spider_output(response, result, spider):$/;"	kind:member	line:30
+process_start_requests	../Comics/Comics/middlewares.py	/^    def process_start_requests(start_requests, spider):$/;"	kind:member	line:46
+re	../wswp_chapter1.py	/^import re$/;"	kind:namespace	line:9
+requests	../wswp_chapter1.py	/^import requests$/;"	kind:namespace	line:6
+robotparser	../wswp_chapter1.py	/^import robotparser$/;"	kind:namespace	line:7
+scrapy	../Comics/Comics/items.py	/^import scrapy$/;"	kind:namespace	line:8
+scrapy	../Comics/Comics/spiders/comics.py	/^import scrapy$/;"	kind:namespace	line:3
+seed_url	../wswp_chapter1.py	/^    seed_url = 'http:\/\/example.webscraping.com\/index'$/;"	kind:variable	line:91
+settings.py	../Comics/Comics/settings.py	1;"	kind:file	line:1
+signals	../Comics/Comics/middlewares.py	/^from scrapy import signals$/;"	kind:namespace	line:8
+spider_opened	../Comics/Comics/middlewares.py	/^    def spider_opened(self, spider):$/;"	kind:member	line:55
+start_requests	../Comics/Comics/spiders/comics.py	/^    def start_requests(self):$/;"	kind:member	line:14
+urlparse	../wswp_chapter1.py	/^import urlparse$/;"	kind:namespace	line:10
+wait	../wswp_chapter1.py	/^    def wait(self, url):$/;"	kind:member	line:70
+whois	../wswp_chapter1.py	/^import whois$/;"	kind:namespace	line:5
+wswp_chapter1.py	../wswp_chapter1.py	1;"	kind:file	line:1

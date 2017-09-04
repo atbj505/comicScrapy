@@ -5,10 +5,19 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 RequestException	wswp_chapter1.py	/^from requests.exceptions import RequestException$/;"	i
+Throttle	wswp_chapter1.py	/^class Throttle(object):$/;"	c
+__init__	wswp_chapter1.py	/^    def __init__(self, delay):$/;"	m	class:Throttle
 builtwith	wswp_chapter1.py	/^import builtwith$/;"	i
+datetime	wswp_chapter1.py	/^import datetime$/;"	i
 download	wswp_chapter1.py	/^def download(url, user_agent='wswp', proxy=None, num_retries=2):$/;"	f
+get_links	wswp_chapter1.py	/^def get_links(html):$/;"	f
+get_robot	wswp_chapter1.py	/^def get_robot(url):$/;"	f
+link_crawler	wswp_chapter1.py	/^def link_crawler(seed_url, link_regex, agent='wswp', max_depth=2):$/;"	f
+link_regex	wswp_chapter1.py	/^    link_regex = '\/(index|view)'$/;"	v	class:Throttle
+re	wswp_chapter1.py	/^import re$/;"	i
 requests	wswp_chapter1.py	/^import requests$/;"	i
 robotparser	wswp_chapter1.py	/^import robotparser$/;"	i
-rp	wswp_chapter1.py	/^rp = robotparser.RobotFileParser(url='http:\/\/www.baidu.com\/robots.txt')$/;"	v
-url	wswp_chapter1.py	/^url = 'http:\/\/www.baidu.com'$/;"	v
+seed_url	wswp_chapter1.py	/^    seed_url = 'http:\/\/example.webscraping.com\/index'$/;"	v	class:Throttle
+urlparse	wswp_chapter1.py	/^import urlparse$/;"	i
+wait	wswp_chapter1.py	/^    def wait(self, url):$/;"	m	class:Throttle
 whois	wswp_chapter1.py	/^import whois$/;"	i
