@@ -29,18 +29,25 @@ def download(url, user_agent='wswp', proxy=None, num_retries=2):
     return html
 
 
-def link_crawler(seed_url, link_regex, agent='wswp', max_depth=2):
+def link_crawler(seed_url, link_regex, agent='wswp', max_depth=2, delay=5, scrape_callback=None):
     crawl_queue = [seed_url]
     seen = {}
+    robot = get_robot(url)
+    throttle = Throttle(delay)
     while crawl_queue:
         url = crawl_queue.pop()
-        robot = get_robot(url)
+        depth = seen.get(url)
         if robot.can_fetch(agent, url):
+            throttle.wait(url)
             html = download(url, agent)
+            links = []
+            if scrape_callback:
+                links.extend(scrape_callback(url, html) or [])
             print('Downloading:%s' % url)
-            depth = seen.get(url)
             if depth != max_depth:
-                for link in get_links(html):
+                if link_regex:
+                    links.extend(link for link in get_links(html))
+                for link in links:
                     if re.match(link_regex, link):
                         link = urlparse.urljoin(seed_url, link)
                         if link not in seen:
