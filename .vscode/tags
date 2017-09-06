@@ -6,28 +6,43 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 BOT_NAME	../Comics/Comics/settings.py	/^BOT_NAME = 'Comics'$/;"	kind:variable	line:12
 BeautifulSoup	../Comics/Comics/spiders/comics.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:4
+BeautifulSoup	../wswp_chapter2.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:5
 Comics	../Comics/Comics/spiders/comics.py	/^class Comics(scrapy.Spider):$/;"	kind:class	line:7
 ComicsItem	../Comics/Comics/items.py	/^class ComicsItem(scrapy.Item):$/;"	kind:class	line:11
 ComicsPipeline	../Comics/Comics/pipelines.py	/^class ComicsPipeline(object):$/;"	kind:class	line:9
 ComicsSpiderMiddleware	../Comics/Comics/middlewares.py	/^class ComicsSpiderMiddleware(object):$/;"	kind:class	line:11
+MongoClient	../wswp_chapter2.py	/^from pymongo import MongoClient$/;"	kind:namespace	line:7
 NEWSPIDER_MODULE	../Comics/Comics/settings.py	/^NEWSPIDER_MODULE = 'Comics.spiders'$/;"	kind:variable	line:15
+QApplication	../wswp_chapter3.py	/^from PyQt5.QtWidgets import QApplication$/;"	kind:namespace	line:7
+QWebEngineView	../wswp_chapter3.py	/^from PyQt5.QtWebEngineWidgets import QWebEngineView$/;"	kind:namespace	line:8
+QtCore	../wswp_chapter3.py	/^from PyQt5 import QtGui, QtCore$/;"	kind:namespace	line:6
+QtGui	../wswp_chapter3.py	/^from PyQt5 import QtGui, QtCore$/;"	kind:namespace	line:6
 ROBOTSTXT_OBEY	../Comics/Comics/settings.py	/^ROBOTSTXT_OBEY = True$/;"	kind:variable	line:22
 RequestException	../wswp_chapter1.py	/^from requests.exceptions import RequestException$/;"	kind:namespace	line:8
 SPIDER_MODULES	../Comics/Comics/settings.py	/^SPIDER_MODULES = ['Comics.spiders']$/;"	kind:variable	line:14
-Throttle	../wswp_chapter1.py	/^class Throttle(object):$/;"	kind:class	line:62
-__init__	../wswp_chapter1.py	/^    def __init__(self, delay):$/;"	kind:member	line:66
+Throttle	../wswp_chapter1.py	/^class Throttle(object):$/;"	kind:class	line:70
+__init__	../wswp_chapter1.py	/^    def __init__(self, delay):$/;"	kind:member	line:74
 __init__.py	../Comics/Comics/__init__.py	1;"	kind:file	line:1
 __init__.py	../Comics/Comics/spiders/__init__.py	1;"	kind:file	line:1
+app	../wswp_chapter3.py	/^app = QApplication([])$/;"	kind:variable	line:17
 builtwith	../wswp_chapter1.py	/^import builtwith$/;"	kind:namespace	line:4
+callback	../wswp_chapter3.py	/^def callback(html):$/;"	kind:function	line:37
 comics.py	../Comics/Comics/spiders/comics.py	1;"	kind:file	line:1
 datetime	../wswp_chapter1.py	/^import datetime$/;"	kind:namespace	line:11
 download	../wswp_chapter1.py	/^def download(url, user_agent='wswp', proxy=None, num_retries=2):$/;"	kind:function	line:14
+download	../wswp_chapter2.py	/^from wswp_chapter1 import download$/;"	kind:namespace	line:4
 from_crawler	../Comics/Comics/middlewares.py	/^    def from_crawler(cls, crawler):$/;"	kind:member	line:17
-get_links	../wswp_chapter1.py	/^def get_links(html):$/;"	kind:function	line:51
-get_robot	../wswp_chapter1.py	/^def get_robot(url):$/;"	kind:function	line:56
+get_links	../wswp_chapter1.py	/^def get_links(html):$/;"	kind:function	line:59
+get_robot	../wswp_chapter1.py	/^def get_robot(url):$/;"	kind:function	line:64
+html	../wswp_chapter2.py	/^import lxml.html$/;"	kind:namespace	line:6
 items.py	../Comics/Comics/items.py	1;"	kind:file	line:1
-link_crawler	../wswp_chapter1.py	/^def link_crawler(seed_url, link_regex, agent='wswp', max_depth=2):$/;"	kind:function	line:32
-link_regex	../wswp_chapter1.py	/^    link_regex = '\/(index|view)'$/;"	kind:variable	line:92
+link_crawler	../wswp_chapter1.py	/^def link_crawler(seed_url, link_regex, agent='wswp', max_depth=2, delay=5, scrape_callback=None):$/;"	kind:function	line:32
+link_regex	../wswp_chapter1.py	/^    link_regex = '\/(index|view)'$/;"	kind:variable	line:100
+loadFinished	../wswp_chapter3.py	/^def loadFinished(result):$/;"	kind:function	line:27
+loop	../wswp_chapter3.py	/^loop = QtCore.QEventLoop()$/;"	kind:variable	line:19
+lxml	../wswp_chapter2.py	/^import lxml.html$/;"	kind:namespace	line:6
+lxml	../wswp_chapter3.py	/^import lxml$/;"	kind:namespace	line:5
+main	../wswp_chapter3.py	/^def main():$/;"	kind:function	line:43
 middlewares.py	../Comics/Comics/middlewares.py	1;"	kind:file	line:1
 name	../Comics/Comics/spiders/comics.py	/^    name = "comics"$/;"	kind:variable	line:12
 parse	../Comics/Comics/spiders/comics.py	/^    def parse(self, response):$/;"	kind:member	line:19
@@ -37,17 +52,24 @@ process_spider_exception	../Comics/Comics/middlewares.py	/^    def process_spide
 process_spider_input	../Comics/Comics/middlewares.py	/^    def process_spider_input(response, spider):$/;"	kind:member	line:23
 process_spider_output	../Comics/Comics/middlewares.py	/^    def process_spider_output(response, result, spider):$/;"	kind:member	line:30
 process_start_requests	../Comics/Comics/middlewares.py	/^    def process_start_requests(start_requests, spider):$/;"	kind:member	line:46
+qt	../wswp_chapter3.py	/^def qt(url):$/;"	kind:function	line:21
 re	../wswp_chapter1.py	/^import re$/;"	kind:namespace	line:9
 requests	../wswp_chapter1.py	/^import requests$/;"	kind:namespace	line:6
+requests	../wswp_chapter3.py	/^import requests$/;"	kind:namespace	line:4
 robotparser	../wswp_chapter1.py	/^import robotparser$/;"	kind:namespace	line:7
+scrape_callback	../wswp_chapter2.py	/^def scrape_callback(url, html):$/;"	kind:function	line:9
 scrapy	../Comics/Comics/items.py	/^import scrapy$/;"	kind:namespace	line:8
 scrapy	../Comics/Comics/spiders/comics.py	/^import scrapy$/;"	kind:namespace	line:3
-seed_url	../wswp_chapter1.py	/^    seed_url = 'http:\/\/example.webscraping.com\/index'$/;"	kind:variable	line:91
+search_request	../wswp_chapter3.py	/^def search_request(search_term, page_size=10, page=0):$/;"	kind:function	line:10
+seed_url	../wswp_chapter1.py	/^    seed_url = 'http:\/\/example.webscraping.com\/index'$/;"	kind:variable	line:99
 settings.py	../Comics/Comics/settings.py	1;"	kind:file	line:1
 signals	../Comics/Comics/middlewares.py	/^from scrapy import signals$/;"	kind:namespace	line:8
 spider_opened	../Comics/Comics/middlewares.py	/^    def spider_opened(self, spider):$/;"	kind:member	line:55
 start_requests	../Comics/Comics/spiders/comics.py	/^    def start_requests(self):$/;"	kind:member	line:14
 urlparse	../wswp_chapter1.py	/^import urlparse$/;"	kind:namespace	line:10
-wait	../wswp_chapter1.py	/^    def wait(self, url):$/;"	kind:member	line:70
+wait	../wswp_chapter1.py	/^    def wait(self, url):$/;"	kind:member	line:78
+webview	../wswp_chapter3.py	/^webview = QWebEngineView()$/;"	kind:variable	line:18
 whois	../wswp_chapter1.py	/^import whois$/;"	kind:namespace	line:5
 wswp_chapter1.py	../wswp_chapter1.py	1;"	kind:file	line:1
+wswp_chapter2.py	../wswp_chapter2.py	1;"	kind:file	line:1
+wswp_chapter3.py	../wswp_chapter3.py	1;"	kind:file	line:1
